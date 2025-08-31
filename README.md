@@ -8,7 +8,7 @@ the course Data Structures and Algorithms
 - [Limitations](#limitations)
 - [Sample Console Outputs](#sample-console-outputs)
 - [Disclaimer](#disclaimer)
-- 
+  
 ## Description
 Each groups were tasked to create a simple console-based zoo inventory tracking system that can store up to 50 animals.
 The program should allow zookeepers to:
