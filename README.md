@@ -1,7 +1,7 @@
 # EncloSys
 Inspired by Shubaruuu's Github repo Z-inventory. A 2nd year 1st sem prelim project for
 the course Data Structures and Algorithms
-## Table of Contents
+
 ## Table of Contents
 - [Dedication](#enclosys)
 - [Description](#description)
