@@ -1,7 +1,14 @@
 # EncloSys
-Inspired by Shubaruuu's Github repo Z-inventory. A 2nd year 1st sem prelim project for
+Inspired by [Shubaruuu's](https://github.com/SHUBARUUU) Github repo [Z-inventory](https://github.com/SHUBARUUU/Z-Inventory). A 2nd year 1st sem prelim project for
 the course Data Structures and Algorithms
 
+## Table of Contents
+- [Dedication](#enclosys)
+- [Description](#description)
+- [Limitations](#limitations)
+- [Sample Console Outputs](#sample-console-outputs)
+- [Disclaimer](#disclaimer)
+  
 ## Description
 Each groups were tasked to create a simple console-based zoo inventory tracking system that can store up to 50 animals.
 The program should allow zookeepers to:
