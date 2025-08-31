@@ -29,7 +29,7 @@ should be avoided. Only beginner java concepts
 ## Sample Console Outputs
 
 ```
-Welcome to Z-Inventory System!
+     Welcome to EncloSys!
 ------------------------------
 [1] Add a new animal
 [2] View all animals
@@ -54,7 +54,7 @@ Enter animal enclosure num: 0
 ```
 
 ```
-Welcome to Z-Inventory System!
+     Welcome to Enclosys!
 ------------------------------
 [1] Add a new animal
 [2] View all animals
