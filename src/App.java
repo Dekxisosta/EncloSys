@@ -12,10 +12,10 @@ import java.io.IOException;
  *
  * Inspired by Shubaruuu's Z-Inventory GitHub repo,
  * refactored into reusable components which still abides to project constraints
- * (No advanced data structures like Objects, etc.)<p></p>
+ * (No advanced data structures like Objects, etc.)
  *
  * @author Dekxisosta
- * @created 2025/08/31
+ * created on 2025/08/31
  *
  * <p><b>Dependencies:</b></p>
  * <ul>
@@ -70,6 +70,7 @@ public class App {
      * <ul>
      *  <li>{@link #run()} contains the z-inventory's program flow</li>
      * </ul>
+     * @param args Command-line args (not used)
      * @see #run()
      */
     public static void main(String[] args) {
@@ -79,11 +80,14 @@ public class App {
             e.printStackTrace();
         }
     }
+    /** Prevents instantiation for only one single class file is used */
+    private App(){}
+
     /*===============================
      * PROGRAM FLOW
      *===============================*/
     /** 
-     * Runs the program 
+     * Runs the program
      * <p><b>Dependencies:</b></p>
      * <ul>
      *  <li>{@link #actionMenu(int)} performs an action based on user choice</li>
@@ -103,7 +107,7 @@ public class App {
      * ACTION MENU
      *===============================*/
     /**
-     * Adds an animal based on {@link #size}<p></p>
+     * Adds an animal based on {@link #size}
      * <p><b>Dependencies:</b></p>
      * <ul>
      *  <li>{@link #addAnimal} – adds an animal on the parallel data structure</li>
@@ -113,6 +117,7 @@ public class App {
      *  <li>{@link #viewAnimalsEnclosure} - views animals on the desired enclosure </li>
      *  <li>{@link #promptContinueProgram} - prompts for the continuity of the program </li>
      * </ul>
+     * @param choice the index of the action the user wants to perform
      * @see #addAnimal
      * @see #viewAllAnimalDetails
      * @see #searchAnimalsBasedOnName
@@ -151,7 +156,7 @@ public class App {
      * PROJECT SPECIFIC METHODS
      *===============================*/
     /**
-     * Adds an animal based on {@link #size}<p></p>
+     * Adds an animal based on {@link #size}
      * <p><b>Dependencies:</b></p>
      * <ul>
      *  <li>{@code animalNames} – contains the names of the animals</li>
@@ -183,7 +188,7 @@ public class App {
     }
 
     /**
-     * Show all animals present in the zoo<p></p>
+     * Show all animals present in the zoo
      * @see #showAnimal(int)
      */
     private void viewAllAnimalDetails(){
@@ -192,7 +197,7 @@ public class App {
     }
 
     /**
-     * Search animals based on name<p></p>
+     * Search animals based on name
      * <p><b>Dependencies:</b></p>
      * <ul>
      *  <li>{@link #animalNames} contains the names of animals</li>
@@ -222,7 +227,7 @@ public class App {
     }
 
     /**
-     * Counts animals by specie<p></p>
+     * Counts animals by specie
      * <p><b>Dependencies:</b></p>
      * <ul>
      *  <li>{@link #animalSpecies} contains the species of animals</li>
@@ -244,7 +249,7 @@ public class App {
     }
 
     /**
-     * Views animals in a set enclosure<p></p>
+     * Views animals in a set enclosure
      * <p><b>Dependencies:</b></p>
      * <ul>
      *  <li>{@link #animalEnclosureNums} contains the enclosure numbers of animals</li>
@@ -268,7 +273,7 @@ public class App {
     }
 
     /**
-     * Prompts user whether to continue program or not<p></p>
+     * Prompts user whether to continue program or not
      * <p><b>Dependencies:</b></p>
      * <ul>
      *  <li>{@link #isContinueProgram} determines the program's continuity</li>
@@ -315,7 +320,7 @@ public class App {
 
     /**
      * Shows a simple enter prompt with the input type needed
-     * for console prompt clarity<p></p>
+     * for console prompt clarity
      * @param inputType the type of input which the program needs
      */
     private void showEnterPrompt(String inputType){
@@ -323,7 +328,7 @@ public class App {
     }
 
     /**
-     * Shows an animal based on a selected index<p></p>
+     * Shows an animal based on a selected index
      * <p><b>Dependencies:</b></p>
      * <ul>
      *  <li>{@code animalNames} – contains the names of the animals</li>
@@ -349,7 +354,7 @@ public class App {
 
     /**
      * Gets a console user input from {@link #readString()} then compares it to set values that
-     * correspond to either true or false. Retries until a valid input is provided.<p></p>
+     * correspond to either true or false. Retries until a valid input is provided.
      * @return {@code true} if the input is 1, true, yes, y, or t;
      *         {@code false} if the input is 0, false, no, n, or f
      */
@@ -371,7 +376,9 @@ public class App {
     }
     /**
      * Gets an integer output from {@link #readInt()} then compares it to an inclusive min-max range,
-     * if invalid, catches and retries until a valid input is gotten. <p></p>
+     * if invalid, catches and retries until a valid input is gotten.
+     * @param min inclusive minimum range
+     * @param max inclusive maximum range
      * @return an integer within the set range of the inclusive min-max
      */
     private int readIntWithRange(int min, int max) {
@@ -386,7 +393,7 @@ public class App {
 
     /**
      * Gets a string from {@link #readString()} then tries to parse it into an integer,
-     * if invalid, catches and retries until a valid input is gotten. <p></p>
+     * if invalid, catches and retries until a valid input is gotten.
      * @return a parsed integer from console user input.
      */
     private int readInt(){
@@ -401,7 +408,7 @@ public class App {
     }
 
     /**
-     * Reads a string, used in the program to get animal names, species, etc. <p></p>
+     * Reads a string, used in the program to get animal names, species, etc.
      * @return trimmed console user input.
      */
     private String readString(){
@@ -438,7 +445,7 @@ public class App {
     }
 
     /**
-     * Provides a clear distinction between message types when rendered in console. <p></p>
+     * Provides a clear distinction between message types when rendered in console.
      * @param tag gets its label for easier message-type identification
      * @param message shows an appropriate message based on the program's output
      */
