@@ -292,7 +292,7 @@ public class App {
      *===============================*/
     /** Shows a set of options based on the actions in the system */
     private void showMenuOptions(){
-        printf("%n%s", "Welcome to Z-Inventory System!");
+        printf("%n%s", "     Welcome to Enclosys!     ");
         printf("%n%s", "------------------------------");
         printf("""
             %n[1] Add a new animal
