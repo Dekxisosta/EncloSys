@@ -1,5 +1,5 @@
 # EncloSys
-Inspired by Shubaruuu's Github repo Z-inventory. A 2nd year 1st sem prelim project for
+Inspired by [Shubaruuu's](https://github.com/SHUBARUUU) Github repo [Z-inventory](https://github.com/SHUBARUUU/Z-Inventory). A 2nd year 1st sem prelim project for
 the course Data Structures and Algorithms
 
 ## Table of Contents
