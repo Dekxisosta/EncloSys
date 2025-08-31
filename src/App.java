@@ -25,7 +25,7 @@ import java.io.IOException;
  * </ul>
  */
 public class App {
-    /*===============================
+    /*================================
      * INSTANCE FIELDS
      *===============================*/
     /** The fixed size of the parallel data structure */
