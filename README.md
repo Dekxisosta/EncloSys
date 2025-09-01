@@ -3,7 +3,6 @@ Inspired by [Shubaruuu's](https://github.com/SHUBARUUU) Github repo [Z-inventory
 the course Data Structures and Algorithms
 
 ## Table of Contents
-- [Dedication](#enclosys)
 - [Description](#description)
 - [Limitations](#limitations)
 - [Sample Console Outputs](#sample-console-outputs)
